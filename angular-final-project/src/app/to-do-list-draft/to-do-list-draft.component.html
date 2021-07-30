@@ -1,0 +1,28 @@
+<!-- container for tasks (currently 3 displayed) -->
+
+    <mat-card class="extra-border-radius">
+        <div class="header-flex-container">
+            <mat-checkbox color="accent" class="task-title">Task_1</mat-checkbox>
+            <button 
+                mat-mini-fab color="accent" 
+                class="mat-elevation-z4"
+                (click)="toggleEdit()">
+                <mat-icon>{{icon}}</mat-icon>
+            </button>
+
+        </div>
+        <mat-card-content>Description goes here . . .</mat-card-content>
+        <!-- <mat-card-actions></mat-card-actions> -->
+
+        <!-- <mat-card-footer style="display: flex; justify-content: center;">
+            <button 
+                mat-mini-fab color="accent" 
+                class="mat-elevation-z4"
+                style="width: 100px; border-radius: 50px;">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </mat-card-footer> -->
+
+    </mat-card>
+
+<!-- end of container for tasks -->

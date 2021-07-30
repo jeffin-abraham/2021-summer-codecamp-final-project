@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; padding: 0; background: transparent; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.background-image {
+    background-image: url('https://imgpile.com/images/7PRuna.png'); 
+    height: 100vh;
+}
+
+.base-card-margins {
+    width: 100%;
+    max-width: 600px; /* change this later */
+    min-width: 350px;
+    margin: 50px 75px 50px 75px;
+    background-color: rgb(48,48,48);
+    padding: 35px !important;
+    border-radius: 25px !important;
+    box-shadow: 1px 10px 14px -2px rgba(0,0,0,0.95) !important;
+}
+
+.header-flex-container {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.fab-drop-shadow {
+    box-shadow: 0px 5px 2px -2px #000000 !important;
+}
+
+/* .tasks-flex-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+} */
