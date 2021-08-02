@@ -16,13 +16,16 @@
                 <mat-card-subtitle>Testing UI Layout</mat-card-subtitle>
             </div>
         </div>
+        <app-to-do-list-draft></app-to-do-list-draft>
         <!-- end of container for title and menu button -->
 
         <!-- displaying tasks -->
-        <div> <!--class="tasks-flex-container"-->
-        <app-to-do-list-draft></app-to-do-list-draft>
-        <app-to-do-list-draft></app-to-do-list-draft>
+        <!-- <div *ngIf="createTask; else add-new-task"> class="tasks-flex-container"
+            No tasks yet!
         </div>
+        <ng-template #add-new-task>
+            <app-to-do-list-draft></app-to-do-list-draft>
+        </ng-template> -->
         
         <!-- button to add a new task is contained in card footer -->
         <mat-card-footer>

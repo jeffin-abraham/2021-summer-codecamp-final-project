@@ -1,4 +1,9 @@
 <!-- currently houses the NONFUNCTIONAL Add Task button -->
 <div class="footer-flex-container">
-    <button mat-fab color="accent" class="mat-elevation-z4"><mat-icon>add</mat-icon></button>
+    <button 
+        mat-fab color="accent"
+        class="mat-elevation-z4"
+        (click)="addNewTask()">
+        <mat-icon>add</mat-icon>
+    </button>
 </div>

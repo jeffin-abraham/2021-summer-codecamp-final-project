@@ -1,5 +1,7 @@
 import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+// import { Task } from '../task';
+// import { task } from '../tasks/tasks.component';
 
 @Component({
   selector: 'app-to-do-list-draft',

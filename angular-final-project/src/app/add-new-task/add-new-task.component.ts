@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddNewTaskComponent implements OnInit {
 
+  createTask: Boolean = false;
+  addNewTask(){
+    this.createTask = !this.createTask
+    
+    console.log("Adding new task...")
+  };
+
   constructor() { }
 
   ngOnInit(): void {
