@@ -1,34 +1,44 @@
-<div class="container background-image">
-    <mat-card class="base-card-margins">
+  <!--Main Navigation-->
+  <header>
+    <!-- Navbar -->
+    <app-navbar></app-navbar>
+    
+    <!-- Navbar -->
 
-        <!-- add sidenav menu? -->
-
-        <!-- container for title and menu button -->
-        <div class="header-flex-container">
-            <div>
-                <button mat-fab color="accent" class="mat-elevation-z4"><mat-icon>menu</mat-icon></button>
-            </div>
-
-            <!-- need logic for populating tasks & tie to add new tasks btn -->
-
-            <div style="text-align: right; margin-bottom: 50px;">
-                <mat-card-title>{{title}}</mat-card-title>
-                <mat-card-subtitle>Testing UI Layout</mat-card-subtitle>
-            </div>
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask" style="background-color: rgba(52, 51, 51, 0.8);">
+        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Project Management App</h1>
+            <a class="btn btn-outline-light btn-lg m-2" href="#" role="button"
+              rel="nofollow" target="_blank">Get Started</a>
+          </div>
         </div>
-        <!-- end of container for title and menu button -->
+      </div>
+    </div>
 
-        <!-- displaying tasks -->
-        <div> <!--class="tasks-flex-container"-->
-        <app-to-do-list-draft></app-to-do-list-draft>
-        <app-to-do-list-draft></app-to-do-list-draft>
+    <!--Section: Content-->
+    <section>
+      <div id="section2pic" class="bg-image shadow-2-strong">
+        <div class="mask" style="background-color: rgba(52, 51, 51, 0.8);">
+          <div class="todolist">
+            <div class="addnewtask">
+              <app-to-do-list-draft></app-to-do-list-draft>
+            </div>
+          </div>
+           
         </div>
-        
-        <!-- button to add a new task is contained in card footer -->
-        <mat-card-footer>
-            <app-add-new-task></app-add-new-task>
-        </mat-card-footer>
+      </div>
+    </section>
+    <!--Section: Content-->
+    <hr class="my-5" />
 
+    <!-- Footer: Contact Us -->
+    <div>
+      <app-contact-us></app-contact-us>
+    </div>
 
-    </mat-card>
-</div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->

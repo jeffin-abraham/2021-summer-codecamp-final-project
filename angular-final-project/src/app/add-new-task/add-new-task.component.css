@@ -1,6 +1,14 @@
-.footer-flex-container {
+.listbg{
+    background-color: aliceblue;
+}
+
+.deletebtn{
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.listrw{
+    padding: 0;
 }
