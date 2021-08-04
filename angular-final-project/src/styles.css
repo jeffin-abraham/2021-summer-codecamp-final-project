@@ -4,8 +4,10 @@ html, body { height: 100%; }
 body { margin: 0; padding: 0; background: transparent; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .container {
-    display:flex;
-    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* justify-content: space-evenly; */
 }
 
 .background-image {
@@ -13,31 +15,44 @@ body { margin: 0; padding: 0; background: transparent; font-family: Roboto, "Hel
     height: 100vh;
 }
 
-.base-card-margins {
-    width: 100%;
+.base-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     max-width: 600px; /* change this later */
     min-width: 350px;
     margin: 50px 75px 50px 75px;
     background-color: rgb(48,48,48);
-    padding: 35px !important;
-    border-radius: 25px !important;
-    box-shadow: 1px 10px 14px -2px rgba(0,0,0,0.95) !important;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 1px 10px 14px -2px rgba(0,0,0,0.95);
 }
 
-.header-flex-container {
+.header-flex-item {
+    width: 100%;
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    flex-shrink: 0;
+    /*border: 1px solid rgb(0, 255, 76); debugging*/
+}
+
+.content-flex-item { /*Contents not stretching to width of parent container*/
+    width: 100%;
+    display: flex;
+    /*border: 1px solid red; debugging*/
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.footer-flex-item {
+    width: 100%;
+    display: flex;
+    align-self: flex-end !important;
+    margin-top: 50px;
+    /*border: 1px solid rgb(38, 0, 255); debugging*/
 }
 
 .fab-drop-shadow {
     box-shadow: 0px 5px 2px -2px #000000 !important;
 }
-
-/* .tasks-flex-container {
-    display:flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-} */

@@ -1,7 +1,45 @@
+.task-card-flex-container {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex: 1 1 auto; */
+    /* justify-content: space-between; */
+    width: 90%;
+    align-items: center;
+
+    padding: 20px;
+    background-color: gray;
+    border-radius: 15px;
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.90);
+
+    /* position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.task-header-flex-container {
+    display:flex;
+    flex-direction: row;
+    /* align-items: stretch; */
+    justify-content: space-between;
+    /* align-items: center; */
+    
+}
+
+.font-style,
+app-tasks {
+    font-family: Helvetica, sans-serif;
+    color: white;
+}
+
+
 .extra-border-radius {
     border-radius: 15px;
     margin-bottom: 20px;
 }
+
+
+
+
 
 .header-flex-container {
     display:flex;

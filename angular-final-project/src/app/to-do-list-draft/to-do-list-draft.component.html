@@ -1,28 +1,21 @@
-<!-- container for tasks (currently 3 displayed) -->
+<!-- container for displaying individual tasks -->
+<div class="task-card-flex-container"><!--Flex Container-->
 
-    <mat-card class="extra-border-radius">
-        <div class="header-flex-container">
-            <app-tasks></app-tasks> <!-- tasks component -->
-            <button 
-                mat-mini-fab color="accent" 
-                class="mat-elevation-z4"
-                (click)="toggleEdit()">
-                <mat-icon>{{icon}}</mat-icon>
-            </button>
+    <!--Format Title and Edit Button-->
+    <div class="task-header-flex-container">
+         <!-- tasks component -->
+         some word
+        <button 
+            mat-mini-fab color="accent" 
+            class="mat-elevation-z4"
+            (click)="toggleEdit()">
+            <mat-icon>{{icon}}</mat-icon>
+        </button>
+    </div>
 
-        </div>
-        <mat-card-content>Description goes here . . .</mat-card-content>
-        <!-- <mat-card-actions></mat-card-actions> -->
-
-        <!-- <mat-card-footer style="display: flex; justify-content: center;">
-            <button 
-                mat-mini-fab color="accent" 
-                class="mat-elevation-z4"
-                style="width: 100px; border-radius: 50px;">
-                <mat-icon>delete</mat-icon>
-            </button>
-        </mat-card-footer> -->
-
-    </mat-card>
-
+    <!--Format Description box-->
+    <div class="font-style">
+        Description goes here . . .
+    </div>
+</div>
 <!-- end of container for tasks -->

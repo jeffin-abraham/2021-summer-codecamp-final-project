@@ -1,10 +1,8 @@
 <div class="container background-image">
-    <mat-card class="base-card-margins">
+    <div class="base-card-container">
 
-        <!-- add sidenav menu? -->
-
-        <!-- container for title and menu button -->
-        <div class="header-flex-container">
+        <!--HEADER containing NavMenu Trigger and ListTitle, ListSubtitle-->
+        <div class="header-flex-item">
             <div>
                 <button mat-fab color="accent" class="mat-elevation-z4"><mat-icon>menu</mat-icon></button>
             </div>
@@ -12,26 +10,22 @@
             <!-- need logic for populating tasks & tie to add new tasks btn -->
 
             <div style="text-align: right; margin-bottom: 50px;">
-                <mat-card-title>{{title}}</mat-card-title>
-                <mat-card-subtitle>Testing UI Layout</mat-card-subtitle>
+                <h2 style="margin:0; color: white;">{{title}}</h2>
+                <h4 style="margin:0; color: white;">Testing UI Layout</h4>
             </div>
         </div>
-        <app-to-do-list-draft></app-to-do-list-draft>
-        <!-- end of container for title and menu button -->
 
-        <!-- displaying tasks -->
-        <!-- <div *ngIf="createTask; else add-new-task"> class="tasks-flex-container"
-            No tasks yet!
-        </div>
-        <ng-template #add-new-task>
+        <!--MAIN container for task display-->
+        <div class="content-flex-item">
             <app-to-do-list-draft></app-to-do-list-draft>
-        </ng-template> -->
+        </div>
+
+        <!--FOOTER containing CompletedTasks-->
+        <div class="footer-flex-item">
+            <div>
+                Completed Tasks Show Here
+            </div>
+        </div>
         
-        <!-- button to add a new task is contained in card footer -->
-        <mat-card-footer>
-            <app-add-new-task></app-add-new-task>
-        </mat-card-footer>
-
-
-    </mat-card>
+    </div>
 </div>
