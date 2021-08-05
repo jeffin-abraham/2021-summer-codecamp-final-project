@@ -30,7 +30,7 @@
                         [cdkDropListData]="column.tasks"
                         (cdkDropListDropped)="drop($event)">
                         <div class="task" *ngFor="let item of column.tasks" cdkDrag>
-                            {{ item }}
+                            {{item}}
                         </div>
                     </div>
                 </div>

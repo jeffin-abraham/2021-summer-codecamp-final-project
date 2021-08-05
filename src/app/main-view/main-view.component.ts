@@ -17,41 +17,21 @@ export class MainViewComponent implements OnInit {
 
     this.board.columns[columnIndex].tasks.push(item);
 
-    console.warn(this.list);
+    // console.warn(this.list);
   }
 
   removeTask(id:number){
-    this.list=this.list.filter(item=>item.id !== id);
+    this.list = this.list.filter(item=>item.id !== id);
     console.warn(id);
   }
 
   constructor() { }
 
   board: Board = new Board('Test Board',[
-    new Column ('Ideas',[
-      "Some random idea",
-      "This is another random idea",
-      "build an awesome application"
-    ]),
-    new Column ('Rearch',[
-      "Lorem",
-      "test",
-      "Test"
-    ]),
-    new Column ('Todo',[
-      'Get to work',
-      'Pick up groceries',
-      'Go home',
-      'Fall asleep'
-    ]),
-    new Column ('Done',[
-      'Get up',
-    'Brush teeth',
-    'Take a shower',
-    'Check e-mail',
-    'Walk dog'
-    ])
-
+    new Column ('Ideas',[]),
+    new Column ('Rearch',[]),
+    new Column ('Todo',[]),
+    new Column ('Done',[])
   ]);
 
   ngOnInit(): void {
