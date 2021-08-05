@@ -1,0 +1,45 @@
+<div class="bg-image">
+    <div class="root">
+        <div class="board">
+        
+        <div class="board-bar">
+            <p class="board-name">{{ board.name }}</p>
+        </div>
+        
+        <div class="board-wrapper">
+        
+            <div class="board-columns" cdkDropListGroup>
+                <div class="board-column" *ngFor="let column of board.columns; let i = index">
+        
+                    <div class="column-title">
+                        {{ column.name }}
+                    </div>
+                    <div class="input-form">
+                        <input type="text" placeholder="Add a new item" #task>
+                        <button mat-raised-button (click)="addTask(i, task.value)">Add</button>                             
+                    </div>
+
+                    <div class="listbg">
+                        <ul *ngFor="let item of list" class="listrw">
+                            <li class="deletebtn">{{item.name}}<button mat-raised-button (click)="removeTask(item.id)">Delete</button></li>
+                        </ul>
+                    </div>
+        
+                    <div class="tasks-container"
+                        cdkDropList
+                        [cdkDropListData]="column.tasks"
+                        (cdkDropListDropped)="drop($event)">
+                        <div class="task" *ngFor="let item of column.tasks" cdkDrag>
+                            {{ item }}
+                        </div>
+                    </div>
+                </div>
+        
+                </div>
+        
+            </div>
+    
+        </div>
+    
+    </div>
+</div>
